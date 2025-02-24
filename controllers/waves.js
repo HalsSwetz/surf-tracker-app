@@ -2,6 +2,7 @@ const express = require('express');
 const router = express.Router();
 
 const User = require('../models/user.js');
+const Wave = require('../models/user.js');
 
 router.get('/', async (req, res) => {
     try {
@@ -17,3 +18,11 @@ router.get('/', async (req, res) => {
         res.redirect('/');
     }
 });
+
+
+
+
+
+
+
+module.exports = router;

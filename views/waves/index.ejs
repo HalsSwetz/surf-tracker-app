@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <title>My Waves</title>
+  </head>
+  <body>
+    <%- include('../partials/_navbar.ejs') %>
+    <h1 class="waves-header">Check out my Waves</h1>
+    
+    
+    <% if (waves.length === 0) { %>
+        <p>There are no items in this pantry.</p>
+    <% } else { %>
+       <ul class="wave-list">
+            <% waves.forEach(wave => { %>
+            <li>
+                <a href="/users/<%= user._id %>/waves/<%= wave._id %>">
+                <%= .name %>
+                </a>
+            </li>
+        <% }) %>
+       </ul>
+    <% } %>
+
+    <a class="add-item" href="/users/<%= user._id %>/foods/new" >Add an item to your Pantry</a>
+</body>
+</html>

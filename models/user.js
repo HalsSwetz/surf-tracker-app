@@ -1,7 +1,8 @@
 const mongoose = require('mongoose');
 
+
 const waveSchema = new mongoose.Schema ({
-wave: {
+name: {
   type: String,
   required: true,
 },
@@ -48,9 +49,10 @@ const userSchema = new mongoose.Schema({
   bio: {
     type: String,
   },
-  destinations: [waveSchema],
+  waves: [waveSchema],
 });
 
+const Wave = mongoose.model('Wave', waveSchema);
 const User = mongoose.model('User', userSchema);
 
 module.exports = User;
