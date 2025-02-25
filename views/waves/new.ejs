@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <title>Add a Wave</title>
+  </head>
+  <body>
+    <%- include('../partials/_navbar.ejs') %>
+    <h1>Add a Wave</h1>
+    <div class="new-body">
+    <form action="/users/<%= user._id %>/waves" method="POST">
+    </div>
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" />
+      
+        <label for="location">Location:</label>
+        <input type="text" name="location" id="location" />
+      
+        <label for="classification">Classification:</label>
+        <select id="classification" name="classification">
+            <option value="reef break">Reef break</option>
+            <option value="beach break">Beach break</option>
+            <option value="point break">Point break</option>
+        </select>  
+        
+        <label for="difficulty">Difficulty</label>
+        <select id="difficulty" name="difficulty">
+            <option value="beginner">Beginner</option>
+            <option value="intermediate">Intermediate</option>
+            <option value="advanced">Advanced</option>
+        </select>
+
+        <label for="rating">Wave Rating:</label>
+        <select id="rating" name="rating">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+        
+        <label for="dangerous">Dangerous:</label>
+        <input type="checkbox" name="dangerous" id="dangerous" value="true">
+
+        <label for="notes">Notes:</label>
+        <textarea name="notes" id="notes"></textarea>
+
+        <button type="submit">Add Wave</button>
+      </form>
+  </body>
+</html>

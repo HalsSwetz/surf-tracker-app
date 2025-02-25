@@ -1,6 +1,8 @@
 const mongoose = require('mongoose');
 
 
+
+
 const waveSchema = new mongoose.Schema ({
 name: {
   type: String,
@@ -13,14 +15,13 @@ location: {
 classification: {
   type: String,
   enum: ['reef break', 'beach break', 'point break'],
-  enum: ['left', 'right'],
 },
 difficulty: {
   type: String,
   enum: ['beginner', 'intermediate', 'advanced'],
 },
 rating: {
-  type: Number,
+  type: String,
   min: 1,
   max: 5,
 },
@@ -56,3 +57,4 @@ const Wave = mongoose.model('Wave', waveSchema);
 const User = mongoose.model('User', userSchema);
 
 module.exports = User;
+// module.exports = Wave;

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <title>Edit a Wave</title>
+  </head>
+  <body>
+    <%- include('../partials/_navbar.ejs') %>
+    <h1>Edit Wave</h1>
+    <div class="new-body">
+    <form action="/users/<%= user._id %>/waves/<%= wave._id %>?_method=PUT"
+      method="POST">
+    </div>
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" value="<%= wave.name %>" />
+      
+        <label for="location">Location:</label>
+        <input type="text" name="location" id="location" value="<%= wave.location %>"/>
+      
+        <label for="classification">Classification:</label>
+        <select id="classification" name="classification">
+            <option value="reef break" <%= wave.classification === "reef break" ? "selected" : "" %>>Reef break</option>
+            <option value="beach break" <%= wave.classification === "beach break" ? "selected" : "" %>>Beach break</option>
+            <option value="point break" <%= wave.classification === "point break" ? "selected" : "" %>>Point break</option>
+        </select>  
+
+        <label for="difficulty">Difficulty:</label>
+        <select id="difficulty" name="difficulty">
+            <option value="beginner" <%= wave.difficulty === "beginner" ? "selected" : "" %>>Beginner</option>
+            <option value="intermediate" <%= wave.difficulty === "intermediate" ? "selected" : "" %>>Intermediate</option>
+            <option value="advanced" <%= wave.difficulty === "advanced" ? "selected" : "" %>>Advanced</option>
+        </select>
+
+        <label for="rating">Wave Rating:</label>
+        <select id="rating" name="rating">
+            <option value="1" <%= wave.rating === "1" ? "selected" : "" %>>1</option>
+            <option value="2" <%= wave.rating === "2" ? "selected" : "" %>>2</option>
+            <option value="3" <%= wave.rating === "3" ? "selected" : "" %>>3</option>
+            <option value="4" <%= wave.rating === "4" ? "selected" : "" %>>4</option>
+            <option value="5" <%= wave.rating === "5" ? "selected" : "" %>>5</option>
+        </select>
+        
+        <label for="dangerous">Dangerous:</label>
+        <input type="checkbox" name="dangerous" id="dangerous" value="true"
+        <%= wave.dangerous ? 'checked' : '' %>>
+
+        <label for="notes">Notes:</label>
+        <textarea name="notes" id="notes"><%= wave.notes %></textarea>
+
+        <button type="submit">Update Wave</button>
+      </form>
+  </body>
+</html>

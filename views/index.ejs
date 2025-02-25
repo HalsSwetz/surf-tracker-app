@@ -12,9 +12,15 @@
         <h1 class="main-header">Waves</h1>
         <p class="subheader">Add Waves to your profile, check out other surfer's waves!</p>
       </div>
+      <% if (user) { %>
+        <h2>Welcome to Waves <%= user.username %>!</h2>
+        <p>
+        </p>
+        <% } else { %>
+        <h2>Welcome, let's get started!</h2>
       <div class="auth-links">
         <a class="signup-link" href="/auth/sign-up">Get Started</a>
-        
+        <% } %>
       </div>
     </div>
   

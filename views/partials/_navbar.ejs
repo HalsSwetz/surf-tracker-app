@@ -1,13 +1,13 @@
 <nav>
-    <a class="explore-link" href="/users/index.ejs">Explore Profiles</a>
-    <a class="home-link" href="/">Home</a>
-    <% if(user) { %>
-        <a class="waves-link" href="/users/<%=user._id%>/waves">My Waves</a>
-        <a class="signout-link" href="/auth/sign-out">Sign Out</a>
-    <% } else { %>
-    <div class="auth-links">
-        <a class="singin-link" href="/auth/sign-in">Sign In</a>
-        <a class="signup-link" href="/auth/sign-up">Sign Up</a>
-    </div>
-    <% } %>
-  </nav>
+  <a class="explore-link" href="/users/index.ejs">Explore Profiles</a>
+  <a class="home-link" href="/">Home</a>
+  <% if(user) { %>
+      <a class="waves-link" href="/users/<%=user._id%>/waves">My Waves</a>
+      <a class="signout-link" href="/auth/sign-out">Sign Out</a>
+  <% } else { %>
+  <div class="auth-links">
+      <a class="singin-link" href="/auth/sign-in">Sign In</a>
+      <a class="signup-link" href="/auth/sign-up">Sign Up</a>
+  </div>
+  <% } %>
+</nav>
