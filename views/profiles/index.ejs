@@ -9,8 +9,12 @@
   <body>
     <%- include('../partials/_navbar.ejs') %>
     <h1 class="waves-header">My Waves</h1>
-    <p>Your Bio: <%=  %></p>
-    
+    <p>Username: <%= user.username %></p>
+    <p>Your Bio: <%= user.bio  %></p>
+    <% if (user.picture) { %>
+        <img src="<%= user.picture %>" alt="Profile Picture" />
+        <% } %>
+
     <% if (waves.length === 0) { %>
         <p>You have no saved destinations!</p>
     <% } else { %>

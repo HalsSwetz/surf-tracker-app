@@ -8,8 +8,8 @@
   </head>
   <body>
     <%- include('../partials/_navbar.ejs') %>
-    <h1 class="waves-header">My Waves</h1>
-    <p>Your Bio: <%=  %></p>
+    <h1 class="waves-header"><%= user.username %>'s Waves</h1>
+    <!-- <p>Your Bio: <%=  %></p> -->
     
     <% if (waves.length === 0) { %>
         <p>You have no saved destinations!</p>

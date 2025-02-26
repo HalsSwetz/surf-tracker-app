@@ -1,8 +1,6 @@
 const mongoose = require('mongoose');
 
 
-
-
 const waveSchema = new mongoose.Schema ({
 name: {
   type: String,

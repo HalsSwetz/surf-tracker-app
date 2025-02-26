@@ -12,10 +12,10 @@ router.get('/sign-in', (req, res) => {
   res.render('auth/sign-in.ejs');
 });
 
-// router.get('/profiles/index.ejs', async (req, res) => {
-//   const user = await User.findById(req.user._id);
-//   res.render('profiles/index.ejs', {user: user});
-// });
+router.get('/profiles/index.ejs', async (req, res) => {
+  const user = await User.findById(req.user._id);
+  res.render('profiles/index.ejs', {user: user});
+});
 
 router.get('/sign-out', (req, res) => {
   req.session.destroy();

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <title><%= user.username %></title>
+</head>
+<body>
+  <%- include('../partials/_navbar.ejs') %>
+  <h1><%= user.username %></h1>
+  <h2>Waves:</h2>
+  <ul class="wave-list">
+    <% waves.forEach(wave => { %>
+    <li>
+        <a href="/users/<%= user._id %>/waves/<%= wave._id %>">
+        <%= waves[i].name %>
+        </a>
+    </li>
+<% }) %>
+</ul>
+ 
+  
+</body>
+</html>
