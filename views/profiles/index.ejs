@@ -8,13 +8,16 @@
   </head>
   <body>
     <%- include('../partials/_navbar.ejs') %>
-    <h1 class="waves-header">My Waves</h1>
-    <p>Username: <%= profile.username %></p>
-    <p>Your Bio: <%= profile.bio  %></p>
+    <h1 class="profile-header">My Profile</h1>
+    <div class="profile-info">
+    <h3>Username: <%= profile.username %></h3>
+    <div class="current-picture">
     <% if (profile.picture) { %>
-        <img src="<%= profile.picture %>" alt="Profile Picture" />
+        <img src="<%= profile.picture %>" alt="Profile Picture" style="max-width: 100px; max-height: 100px;" />
         <% } %>
-
+    </div>
+    <p>Your Bio: <%= profile.bio  %></p>
+    </div>
     <% if (waves.length === 0) { %>
         <p>You have no saved destinations!</p>
     <% } else { %>
@@ -28,7 +31,7 @@
         <% }) %>
        </ul>
     <% } %>
-
-    <a class="add-item" href="/users/<%= profile._id %>/waves/new" >Add a wave to your profile</a>
+    <a class="edit-profile" href="/profiles/<%= profile._id %>/edit">Edit profile</a>
+    
 </body>
 </html>

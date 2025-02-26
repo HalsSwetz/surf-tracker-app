@@ -1,8 +1,10 @@
+
 <nav>
-  <a class="explore-link" href="/users/index">Explore Profiles</a>
-  <a class="profile-link" href="/profiles/index">My Profile</a>
+  <link rel="stylesheet" href="/stylesheets/partials.css" />
   <% if(user) { %>
       <a class="waves-link" href="/users/<%=user._id%>/waves">My Waves</a>
+      <a class="explore-link" href="/users/index">Explore Profiles</a>
+      <a class="profile-link" href="/profiles/<%= user._id %>">My Profile</a>
       <a class="signout-link" href="/auth/sign-out">Sign Out</a>
   <% } else { %>
   <div class="auth-links">

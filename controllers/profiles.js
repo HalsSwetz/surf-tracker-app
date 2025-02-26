@@ -21,8 +21,9 @@ router.get('/:userId', async (req, res) => {
     try {
         const profile = await User.findById(req.params.userId);
         
-        res.render('/profiles/index', {
+        res.render('profiles/index', {
             profile: profile,
+            waves: profile.waves,
         });
     } catch (error) {
         console.log(error);
@@ -31,9 +32,34 @@ router.get('/:userId', async (req, res) => {
   });
 
 
+  router.get('/:userId/edit', async (req, res) => {
+    try {
+      const profile = await User.findById(req.params.userId);
+      
+      res.render('profiles/edit', {
+        profile: profile,
+        waves: profile.waves,
+      });
+    } catch (error) {
+      console.log(error);
+      res.redirect('/');
+    }
+  });
 
 
 
+  router.put('/:userId', async (req, res) => {
+    try {
+        
+      await User.findByIdAndUpdate(req.params.userId, req.body);
+      
+      res.redirect(`/profiles/${req.params.userId}`);
+
+    } catch (error) {
+      console.log(error);
+      res.redirect('/');
+    }
+  });
 
 
 
