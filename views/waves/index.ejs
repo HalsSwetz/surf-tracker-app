@@ -17,7 +17,7 @@
        <ul class="wave-list">
             <% waves.forEach(wave => { %>
             <li>
-                <a href="/users/<%= user._id %>/waves/<%= wave._id %>">
+                <a href="/users/<%= user._id %>/waves/<%= user._id %>/<%= wave._id %>">
                 <%= wave.name %>
                 </a>
             </li>

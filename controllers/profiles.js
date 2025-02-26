@@ -11,7 +11,7 @@ router.get('/', (req, res) => {
       res.redirect(`/users/${req.session.user._id}/profiles`);
     } else {
       
-      res.render('index.ejs');
+      res.render('/index');
     }
   });
 
@@ -19,10 +19,10 @@ router.get('/', (req, res) => {
 
 router.get('/:userId', async (req, res) => {
     try {
-        const user = await User.findById(req.params.userId);
+        const profile = await User.findById(req.params.userId);
         
-        res.render('profiles/index.ejs', {
-            user: user,
+        res.render('/profiles/index', {
+            profile: profile,
         });
     } catch (error) {
         console.log(error);

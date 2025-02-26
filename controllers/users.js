@@ -17,28 +17,28 @@ router.get('/', async (req, res) => {
     }
 });
 
-router.get('/:userId', async (req, res) => {
-    try {
-        const user = await User.findById(req.params.userId);
+// router.get('/:userId', async (req, res) => {
+//     try {
+//         const user = await User.findById(req.params.userId);
         
-        res.render('users/show.ejs', {
-            user: user,
-        });
-    } catch (error) {
-        console.log(error);
-        res.redirect('/');
-    }
-  });
+//         res.render('users/show.ejs', {
+//             user: user,
+//         });
+//     } catch (error) {
+//         console.log(error);
+//         res.redirect('/');
+//     }
+//   });
 
 
-  router.get('/show/:userId', async (req, res) => {
+  router.get('/:userId', async (req, res) => {
     try {
-        const user = await User.findById(req.params.userId);
+        const foundUser = await User.findById(req.params.userId);
         
         
         res.render('users/show.ejs', {
-            user: user,
-            waves: user.waves,
+            foundUser: foundUser,
+            waves: foundUser.waves,
         });
     } catch (error) {
         console.log(error);

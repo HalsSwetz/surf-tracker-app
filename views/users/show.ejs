@@ -8,12 +8,12 @@
 </head>
 <body>
   <%- include('../partials/_navbar.ejs') %>
-  <h1><%= user.username %></h1>
+  <h1><%= foundUser.username %>'s Waves</h1>
   <h2>Waves:</h2>
   <ul class="wave-list">
     <% waves.forEach(wave => { %>
     <li>
-        <a href="/users/<%= user._id %>/waves/<%= wave._id %>">
+        <a href="/users/<%= foundUser._id %>/waves/<%= foundUser._id %>/<%= wave._id %>">
         <%= wave.name %>
         </a>
     </li>
