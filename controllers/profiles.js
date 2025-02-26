@@ -5,12 +5,12 @@ const User = require('../models/user.js');
 
 
 router.get('/', (req, res) => {
-    // Check if the user is signed in
+    
     if (req.session.user) {
-      // Redirect signed-in users to their applications index
+      
       res.redirect(`/users/${req.session.user._id}/profiles`);
     } else {
-      // Show the homepage for users who are not signed in
+      
       res.render('index.ejs');
     }
   });

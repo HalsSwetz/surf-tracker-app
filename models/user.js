@@ -51,8 +51,7 @@ const userSchema = new mongoose.Schema({
   waves: [waveSchema],
 });
 
-const Wave = mongoose.model('Wave', waveSchema);
+
 const User = mongoose.model('User', userSchema);
 
 module.exports = User;
-// module.exports = Wave;
