@@ -8,7 +8,10 @@
 </head>
 <body>
   <%- include('../partials/_navbar.ejs') %>
-  <h1>Create a new account with Waves</h1>
+  <h1>Waves</h1>
+  
+  <div class="create-account-form">
+    <h4>Create a new account with Waves</h4>
   <form action="/auth/sign-up" method="POST">
     <label for="username">Username:</label>
     <input type="text" name="username" id="username" required />
@@ -26,5 +29,6 @@
       <textarea id="bio" name="bio"></textarea>
     <button type="submit">Sign up</button>
   </form>
+</div>
 </body>
 </html>

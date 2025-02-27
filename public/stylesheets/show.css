@@ -1,0 +1,123 @@
+
+nav {
+    position: absolute;
+    top: 0;
+    left: 20px;
+    right: 20px;
+    z-index: 100;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin-right: 20px;
+    transition: color 0.3s ease;
+  }
+  
+  nav a:hover {
+    color: #ff7f50;
+  }
+  
+
+.waves-body {
+    font-family: 'Lato', sans-serif;
+    background-image: url('https://cdn.pixabay.com/photo/2020/04/04/21/04/ocean-5003864_1280.jpg'); 
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    color: #fff;
+    padding-top: 100px; 
+  }
+  
+  .index-container {
+    background: rgba(116, 110, 159, 0.5); 
+    padding: 10px;
+    border-radius: 8px;
+    max-width: 900px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    z-index: 1;
+    height: 60%;
+  }
+  
+  .show-header {
+    width: 100%;
+    padding-top: 0;
+  }
+  
+  .waves-header {
+    font-family: 'Sarina', sans-serif;
+    font-size: 4.5rem;
+    color: #d73e07;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    text-align: left;
+    width: 100%;
+    margin-top: 0;
+  }
+  .wave-info {
+    font-family: 'Lato', sans-serif;
+    /* margin-bottom: 40px; */
+  }
+  
+  .show-actions {
+    margin-top: auto;
+    display: flex;
+    gap: 20px;
+    justify-content: flex-start;
+  }
+  
+  .show-actions a,
+  .show-actions button {
+    font-size: 1.2rem;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #0941ea; 
+    color: white;
+    border-radius: 25px;
+    font-weight: 700;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+  }
+  
+  .show-actions a:hover,
+  .show-actions button:hover {
+    background-color: #0b0a55; 
+    cursor: pointer;
+  }
+  
+  .show-actions form {
+    display: inline-block;
+    margin: 0;
+  }
+  
+  
+  .show-notes {
+    margin-top: 20px;
+    font-size: 1.2rem;
+  }
+  
+  .show-notes h2 {
+    font-size: 2rem;
+    color: #d73e07;
+    margin-bottom: 10px;
+  }
+  
+  .show-notes p {
+    font-size: 1rem;
+  }
+  
+  .show-details p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }

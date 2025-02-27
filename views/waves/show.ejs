@@ -6,12 +6,12 @@
     <link rel="stylesheet" href="/stylesheets/show.css" />
     <title><%= wave.name %></title>
   </head>
-  <body>
+  <body class="waves-body">
     <%- include('../partials/_navbar.ejs') %>
-    <div class="show-body">
+    <div class="index-container">
       <div class="show-header">
-        <h1><%= wave.name %></h1>
-        <div class="show-sidebar">
+        <h1 class="waves-header"><%= wave.name %></h1>
+       
           <div class="show-actions">
             <a
               href="/users/<%= user._id %>/waves/<%= wave._id %>/edit">Edit Wave</a>
@@ -21,20 +21,19 @@
               <button type="submit">Delete Wave</button>
             </form>
           </div>
+          <div class="wave-info">
           <p>Location: <%= wave.location %></p>
           <p>Classification: <%= wave.classification %></p>
           <p>Difficulty: <%= wave.difficulty %></p>
           <p>Wave Rating: <%= wave.rating %></p>
-          <% if (wave.dangerous) { %>
+
+            <% if (wave.dangerous) { %>
            <p>This wave is dangerous!</p>
            <% } else { %>
             <p>This is not a dangerous wave.</p>
           <% } %>
         </div>
-
-      </div>
-      
-     <% if (wave.notes) { %>
+            <% if (wave.notes) { %>
         <div class="show-notes">
           <h2>Notes:</h2>
           <p><%= wave.notes %></p>

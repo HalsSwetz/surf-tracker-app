@@ -9,20 +9,21 @@
   <body>
     <%- include('../partials/_navbar.ejs') %>
     <h1 class="waves-header"><%= user.username %>'s Waves</h1>
-    <!-- <p>Your Bio: <%=  %></p> -->
     
     <% if (waves.length === 0) { %>
-        <p>You have no saved destinations!</p>
+        <p class="no-waves">You have no saved destinations!</p>
     <% } else { %>
+        <div class="wave-list-container">
        <ul class="wave-list">
             <% waves.forEach(wave => { %>
             <li>
-                <a href="/users/<%= user._id %>/waves/<%= user._id %>/<%= wave._id %>">
+                <a href="/users/<%= user._id %>/waves/<%= wave._id %>" class="wave-item">
                 <%= wave.name %>
                 </a>
             </li>
         <% }) %>
        </ul>
+    </div>
     <% } %>
 
     <a class="add-item" href="/users/<%= user._id %>/waves/new" >Add a wave to your profile</a>

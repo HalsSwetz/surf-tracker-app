@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 
 const User = require('../models/user.js');
-const Wave = require('../models/user.js');
+
 
 router.get('/', async (req, res) => {
     try {
@@ -48,9 +48,9 @@ router.post('/', async (req, res) => {
     }
 }); 
 
-router.get('/:userId/:waveId', async (req, res) => {
+router.get('/:waveId', async (req, res) => {
     try {
-        const currentUser = await User.findById(req.params.userId);
+        const currentUser = await User.findById(req.session.user._id);
         const wave = currentUser.waves.id(req.params.waveId);
         res.render('waves/show.ejs', {
             wave: wave,
