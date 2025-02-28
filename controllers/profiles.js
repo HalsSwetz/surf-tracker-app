@@ -21,9 +21,14 @@ router.get('/:userId', async (req, res) => {
     try {
         const profile = await User.findById(req.params.userId);
         
+        const profileId = profile._id.toString();
+        const canEdit = req.session.user._id === profileId;
+        
+
         res.render('profiles/index', {
             profile: profile,
             waves: profile.waves,
+            canEdit: canEdit,
         });
     } catch (error) {
         console.log(error);

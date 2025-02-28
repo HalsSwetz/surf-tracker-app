@@ -48,10 +48,13 @@ router.post('/', async (req, res) => {
     }
 }); 
 
+// profiles/profileId/waves/waveId
+
 router.get('/:waveId', async (req, res) => {
     try {
         const currentUser = await User.findById(req.session.user._id);
         const wave = currentUser.waves.id(req.params.waveId);
+
         res.render('waves/show.ejs', {
             wave: wave,
         });

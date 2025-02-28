@@ -20,7 +20,7 @@
     </div>
     <p>Your Bio: <%= profile.bio  %></p>
     </div>
-    <p class="your-waves">Your waves:</p>
+    <p class="your-waves">Waves:</p>
     <% if (waves.length === 0) { %>
         <p>You have no saved destinations!</p>
     <% } else { %>
@@ -28,15 +28,18 @@
             <% waves.forEach(wave => { %>
             <li>
                 
-                <a href="/users/<%= profile._id %>/waves/<%= wave._id %>">
+                <a href="/users/<%= user._id %>/waves/<%= wave._id %>">
                 <%= wave.name %>
                 </a>
             </li>
         <% }) %>
        </ul>
     <% } %>
+    <% if (canEdit) { %>
+     
     <a class="edit-profile" href="/profiles/<%= profile._id %>/edit">Edit profile</a>
     
+    <% } %>
     </div>
 
 </body>
