@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Sarina&display=swap');
+
+nav {
+    position: absolute;
+    top: 0;
+    left: 20px;
+    right: 20px;
+    z-index: 100;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav a {
+    color: rgb(242, 241, 245);
+    /* background-color: rgba(0, 0, 0, 0.7); */
+    width: 100%;
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin-right: 20px;
+    transition: color 0.3s ease;
+  }
+  
+  nav a:hover {
+    color: #ff7f50;
+  }
+  
+
+
+
+
+body {
+    background-image: url('https://cdn.pixabay.com/photo/2022/06/30/20/10/lake-7294456_1280.jpg'); /* Update this with the correct image path */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .profile-header {
+    /* text-align: center;
+    font-size: 3rem;
+    padding-top: 20px;
+    font-weight: bold; */
+    font-family: 'Sarina', sans-serif;
+    font-size: 5rem;
+    color: #d73e07;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    /* margin-top: 80px; */
+    margin-bottom: 20px;
+    position: absolute;
+    top: 45px;
+    left: 20px;
+    z-index: 1;
+  }
+  
+  .profile-info {
+    max-width: 800px;
+    margin: 40px auto;
+    background: rgba(0, 0, 0, 0.7); 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .profile-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .profile-info p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+  
+  .current-picture {
+    margin: 20px 0;
+    text-align:left;
+  }
+  
+  .current-picture img {
+    border-radius: 50%;
+    border: 3px solid #fff;
+  }
+  
+  .wave-list {
+    margin-top: 40px;
+    padding-left: 40px;
+  }
+  
+  .wave-list li {
+    font-family: 'Lato', sans-serif;
+    font-size: 22px;
+    margin: 10px 0;
+    text-decoration: none;
+  }
+  
+  .wave-list a {
+    text-decoration: none;
+    color: #eff4f8;
+    transition: color 0.3s ease;
+  }
+  
+  .wave-list a:hover {
+    color: #1f65f1;
+  }
+  
+  .edit-profile {
+    display: block;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .edit-profile:hover {
+    background-color: #2980b9;
+  }

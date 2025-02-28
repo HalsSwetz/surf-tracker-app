@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Sarina&display=swap');
+
 
 nav {
     position: absolute;
@@ -10,7 +12,9 @@ nav {
   }
   
   nav a {
-    color: white;
+    color: rgb(242, 241, 245);
+    /* background-color: rgba(0, 0, 0, 0.7); */
+    width: 100%;
     text-decoration: none;
     font-size: 1.5rem;
     margin-right: 20px;
@@ -24,7 +28,7 @@ nav {
 
 .waves-body {
     font-family: 'Lato', sans-serif;
-    background-image: url('https://cdn.pixabay.com/photo/2020/04/04/21/04/ocean-5003864_1280.jpg'); 
+    background-image: url('https://cdn.pixabay.com/photo/2022/11/11/01/46/headland-7584031_1280.jpg'); 
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -32,20 +36,20 @@ nav {
     justify-content: center;
     align-items: flex-start;
     color: #fff;
-    padding-top: 100px; 
+    padding-top: 200px; 
   }
   
   .index-container {
-    background: rgba(116, 110, 159, 0.5); 
+    background: rgba(72, 119, 190, 0.7); 
     padding: 10px;
-    border-radius: 8px;
+    border-radius: 14px;
     max-width: 900px;
-    width: 40%;
+    width: 90%;
     display: flex;
     flex-direction: column;
     align-items: center; 
     z-index: 1;
-    height: 60%;
+    height: 63%;
   }
   
   .show-header {
@@ -56,25 +60,33 @@ nav {
   .waves-header {
     font-family: 'Sarina', sans-serif;
     font-size: 4.5rem;
-    color: #d73e07;
+    color: #f3f0ef;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 3px;
     margin-bottom: 20px;
-    text-align: left;
+    text-align: center;
     width: 100%;
     margin-top: 0;
+    margin-bottom: 0;
   }
   .wave-info {
     font-family: 'Lato', sans-serif;
-    /* margin-bottom: 40px; */
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1px;
+    margin-bottom: 0;
   }
   
   .show-actions {
     margin-top: auto;
     display: flex;
-    gap: 20px;
-    justify-content: flex-start;
+    gap: 50px;
+    justify-content: center;
+    position: relative;
+    padding-top: 28px;
   }
   
   .show-actions a,
@@ -88,6 +100,9 @@ nav {
     font-weight: 700;
     transition: background-color 0.3s ease;
     text-transform: uppercase;
+    /* display: flex;
+    flex-direction: row;
+    align-items: center; */
   }
   
   .show-actions a:hover,
@@ -101,23 +116,50 @@ nav {
     margin: 0;
   }
   
-  
   .show-notes {
-    margin-top: 20px;
+    margin-top: 0px;
     font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* gap: 1px; */
   }
   
   .show-notes h2 {
     font-size: 2rem;
     color: #d73e07;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* gap: 1px; */
   }
   
   .show-notes p {
     font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* gap: 1px; */
   }
   
   .show-details p {
     font-size: 1.2rem;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
   }
+
+  /* .wave-info label,
+.wave-info input,
+.wave-info select,
+.wave-info textarea,
+.wave-info button {
+  margin-bottom: 8px;
+  margin: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+} */

@@ -11,16 +11,6 @@
     <div class="index-container">
       <div class="show-header">
         <h1 class="waves-header"><%= wave.name %></h1>
-       
-          <div class="show-actions">
-            <a
-              href="/users/<%= user._id %>/waves/<%= wave._id %>/edit">Edit Wave</a>
-            <form
-              action="/users/<%= user._id %>/waves/<%= wave._id %>?_method=DELETE"
-              method="POST">
-              <button type="submit">Delete Wave</button>
-            </form>
-          </div>
           <div class="wave-info">
           <p>Location: <%= wave.location %></p>
           <p>Classification: <%= wave.classification %></p>
@@ -39,6 +29,14 @@
           <p><%= wave.notes %></p>
         </div>
         <% } %>
+        <div class="show-actions">
+            <a href="/users/<%= user._id %>/waves/<%= wave._id %>/edit">Edit Wave</a>
+            <form
+              action="/users/<%= user._id %>/waves/<%= wave._id %>?_method=DELETE"
+              method="POST">
+              <button type="submit">Delete Wave</button>
+            </form>
+          </div>
       </div>
     </div>
   </body>

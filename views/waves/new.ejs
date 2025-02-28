@@ -3,13 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <link rel="stylesheet" href="/stylesheets/show.css" />
     <title>Add a Wave</title>
   </head>
-  <body>
+  <body class="waves-body">
     <%- include('../partials/_navbar.ejs') %>
-    <h1>Add a Wave</h1>
-    <div class="new-body">
+    <div class="index-container">
+
+    <div class="show-header">
+    <h1 class="waves-header">Add a Wave</h1>
+</div>
+    <div class="wave-info">
     <form action="/users/<%= user._id %>/waves" method="POST">
     </div>
         <label for="name">Name:</label>
@@ -49,5 +53,8 @@
 
         <button type="submit">Add Wave</button>
       </form>
+      </div>
+
+    </div>
   </body>
 </html>
