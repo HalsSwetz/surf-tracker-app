@@ -43,7 +43,7 @@ body {
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 3px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     position: absolute;
     top: 15px;
     left: 20px;
@@ -56,17 +56,18 @@ body {
     align-items: flex-start;
     justify-content: flex-start;
     max-width: 900px;
-    margin: 180px auto 60px auto; 
+    margin: 210px auto 60px auto; 
     background: rgba(0, 0, 0, 0.5); 
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    margin-bottom: 120px;
 }
 
 .profile-info {
     max-width: 800px;
-    margin: 40px auto;
+    margin: 60px auto;
     background: rgba(0, 0, 0, 0.7); 
-    padding: 20px;
+    padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
