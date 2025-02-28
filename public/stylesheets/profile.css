@@ -10,17 +10,17 @@ nav {
     margin: 0;
   }
   
-  nav a {
+nav a {
     color: rgb(242, 241, 245);
     text-decoration: none;
     font-size: 1.5rem;
     margin-right: 20px;
     transition: color 0.3s ease;
-  }
+}
   
-  nav a:hover {
+nav a:hover {
     color: #ff7f50;
-  }
+}
   
 
 
@@ -34,9 +34,9 @@ body {
     font-family: 'Lato', sans-serif;
     margin: 0;
     padding: 0;
-  }
+}
   
-  .profile-header {
+.profile-header {
     font-family: 'Sarina', sans-serif;
     font-size: 5rem;
     color: #d73e07;
@@ -48,9 +48,9 @@ body {
     top: 15px;
     left: 20px;
     z-index: 1;
-  }
+}
   
-  .profile-container {
+.profile-container {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -60,112 +60,123 @@ body {
     background: rgba(0, 0, 0, 0.5); 
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  }
+}
 
-  .profile-info {
+.profile-info {
     max-width: 800px;
     margin: 40px auto;
     background: rgba(0, 0, 0, 0.7); 
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  }
+}
   
-  .profile-info h3 {
+.profile-info h3 {
     font-size: 1.7rem;
     margin-bottom: 10px;
-  }
+}
   
-  .profile-info p {
+.profile-info p {
     font-size: 1.5rem;
     line-height: 1.6;
-  }
+}
   
-  .current-picture {
+.current-picture {
     margin: 20px 0;
     text-align:left;
-  }
+}
   
-  .current-picture img {
+.current-picture img {
     border-radius: 50%;
     border: 3px solid #fff;
-  }
-  .your-waves {
+    width: 200px;
+    height: 200px;
+}
+
+.your-waves {
     font-family: 'Lato', sans-serif;
     font-size: 18px;
     margin-left: 14px;
     margin-top: 0;
     margin-bottom: 0;
-  }
-  .wave-list {
+}
+
+.wave-list {
     margin-top: 10px;
+    margin-bottom: 60px;
     padding-left: 40px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     max-width: 100%;
-  }
+    gap: 16px;
+}
   
-  .wave-list li {
+.wave-list li {
     font-family: 'Lato', sans-serif;
     font-size: 16px;
     margin: 8px 0;
     text-decoration: none;
     list-style-type: none;
-  }
+}
   
-  .wave-list a {
+.wave-list a {
     width: 200 px;
     max-width: 200px;
     text-decoration: none;
     color: #eff4f8;
     transition: color 0.3s ease;
-  }
+}
   
-  .wave-list a:hover {
+.wave-list a:hover {
     color: #1f65f1;
-  }
+}
   
-  .edit-profile {
+.edit-profile {
     font-size: 1.2rem;
     text-decoration: none;
-    padding: 10px 20px;
+    padding: 14px 40px;
     background-color: #0941ea; 
     color: white;
     border-radius: 25px;
     font-weight: 700;
     transition: background-color 0.3s ease;
     text-transform: uppercase;
-  }
+    position: relative;
+    bottom: 20px;
+    left: 40%;
+}
   
-  .edit-profile:hover {
+.edit-profile:hover {
     background-color: #0b0a55; 
     cursor: pointer;
-  }
+}
 
 
-  .profile-update {
+.profile-update {
     background-color: rgba(255, 255, 255, 0.75);
-    padding: 30px;
-    max-width: 800px;
-    margin: 250px auto 40px auto;
+    padding: 40px;
+    max-width: 600px;
+    margin: 310px auto 40px auto;
     border-radius: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
+    min-height: 500px;
+}
 
-  .profile-update-info {
+.profile-update-info {
     display: flex;
     flex-direction: column;
     gap: 30px;
   }
 
-  .profile-update-info label {
+.profile-update-info label {
     font-size: 1rem;
     color: #333;
-  }
+}
 
-  .profile-update-info input[type="text"],
-  .profile-update-info textarea {
+.profile-update-info input[type="text"],
+.profile-update-info textarea {
+    font-family: 'Lato', sans-serif;
     padding: 16px;
     font-size: 1rem;
     border: 1px solid #ddd;
@@ -174,12 +185,12 @@ body {
     box-sizing: border-box;
   }
   
-  .profile-update-info textarea {
-    min-height: 150px; 
+.profile-update-info textarea {
+    min-height: 180px; 
     resize: vertical;
-  }
+}
 
-  .update-profile-button {
+.update-profile-button {
     background-color: #0941ea;
     color: white;
     padding: 12px 20px;
@@ -188,9 +199,10 @@ body {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
-  }
+    margin-top: 70px;
+}
   
-  .update-profile-button:hover {
+.update-profile-button:hover {
     background-color: #092f48;
-  }
+}
   

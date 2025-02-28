@@ -13,7 +13,7 @@ html, body {
     padding: 0;
 }
   
-  body {
+body {
     font-family: 'Lato', sans-serif;
     font-size: 22px;
     color: #fff;
@@ -25,10 +25,10 @@ html, body {
     justify-content: center;
     align-items: center;
     text-align: center;
-  }
+}
 
 
-  h1 {
+h1 {
     font-family: 'Sarina', sans-serif;
     font-size: 5rem;
     color: #d73e07;
@@ -41,26 +41,26 @@ html, body {
     top: 45px;
     left: 20px;
     z-index: 1;
-  }
+}
   
-  h2 {
+h2 {
     font-family: 'Lato', sans-serif;
     font-size: 2rem;
     color: #fff;
     font-weight: 300;
     margin-bottom: 20px;
-  }
+}
    
-  .sign-in-form {
+.sign-in-form {
     background: rgba(0, 0, 0, 0.6); 
     padding: 40px;
     border-radius: 8px;
     max-width: 400px;
     width: 90%;
     z-index: 1;
-  }
+}
 
-  .create-account-form {
+.create-account-form {
     background: rgba(0, 0, 0, 0.6); 
     padding: 30px;
     border-radius: 8px;
@@ -69,35 +69,35 @@ html, body {
     z-index: 1;
     margin-left: 10px; 
     margin-top: 120px;
-  }
+}
   
-  form {
+form {
     display: flex;
     flex-direction: column;
     gap: 20px;
-  }
+}
   
-  label {
+label {
     font-size: 1.2rem;
     color: #fff;
-  }
+}
   
-  input,
-  textarea {
+input,
+textarea {
     padding: 10px;
     font-size: 1rem;
     border: 1px solid #ccc;
     border-radius: 4px;
     background-color: #333;
     color: white;
-  }
+}
   
-  textarea {
+textarea {
     resize: vertical;
     height: 150px;
-  }
+}
   
-  button {
+button {
     padding: 15px 30px;
     background-color: #0941ea;
     color: white;
@@ -108,13 +108,13 @@ html, body {
     text-transform: uppercase;
     cursor: pointer;
     transition: background-color 0.3s ease;
-  }
+}
   
-  button:hover {
+button:hover {
     background-color: #ff5722;
-  }
+}
 
-  .index-container {
+.index-container {
     padding: 40px;
     border-radius: 8px;
     max-width: 600px;
@@ -122,13 +122,13 @@ html, body {
     margin-top: 250px;
     z-index: 1;
     text-align: center;
-  }
+}
   
-  .text-container {
+.text-container {
     margin-bottom: 30px;
-  }
+}
   
-  .main-header {
+.main-header {
     font-family: 'Sarina', sans-serif; 
     font-size: 7rem;
     color: #d73e07;
@@ -141,9 +141,9 @@ html, body {
     left: 50%;
     transform: translateX(-50%);
     z-index: 1;
-  }
+}
   
-  .subheader {
+.subheader {
     font-family: 'Lato', sans-serif;
     font-size: 1.5rem;
     font-weight: 300;
@@ -156,13 +156,13 @@ html, body {
     left: 0;
     text-transform: uppercase;
     letter-spacing: 2px;
-  }
+}
   
-  .auth-links {
+.auth-links {
     margin-top: 30px;
-  }
+}
   
-  nav {
+nav {
     position: absolute;
     top: 0;
     left: 20px;
@@ -170,21 +170,21 @@ html, body {
     z-index: 100;
     padding: 0;
     margin: 0;
-  }
+}
   
-  nav a {
+nav a {
     color: white;
     text-decoration: none;
     font-size: 1.5rem;
     margin-right: 20px;
     transition: color 0.3s ease;
-  }
+}
   
-  nav a:hover {
+nav a:hover {
     color: #ff7f50;
-  }
+}
   
-  .waves-body {
+.waves-body {
     font-family: 'Lato', sans-serif;
     background-image: url('https://cdn.pixabay.com/photo/2018/11/14/23/03/sunset-3816247_1280.jpg');
     background-size: cover;
@@ -195,9 +195,9 @@ html, body {
     align-items: flex-start;
     padding-left: 20px;
     color: #fff;
-  }
+}
 
-  .waves-header {
+.waves-header {
     
     font-family: 'Sarina', sans-serif;
     font-size: 3rem;
@@ -210,33 +210,30 @@ html, body {
     top: 80px; 
     left: 30px;
     z-index: 1;
-  }
+}
 
-  .no-waves {
+.no-waves {
     font-size: 1.5rem;
     color: #fff;
     font-weight: 300;
-  }
+}
 
-  .wave-list-container {
+.wave-list-container {
     width: 100%;
     max-width: 600px;
     margin-top: 20px;
-    /* padding-right: 20px; */
-  }
+}
 
-  .wave-list {
+.wave-list {
     list-style-type: none;
     padding: 20px 40px;
     margin: 0;
     display: flex;
     flex-direction: column;
-    /* align-items: flex-start; */
-    /* padding-left: 25px; */
     gap: 20px;
-  }
+}
 
-  .wave-item {
+.wave-item {
     font-family: 'Lato', sans-serif;
     font-size: 1.5rem;
     text-decoration: none;
@@ -250,14 +247,14 @@ html, body {
     display: inline-block;
     width: 100%;
     box-sizing: border-box;
-  }
+}
   
-  .wave-item:hover {
+.wave-item:hover {
     color: #17a498;
     cursor: pointer;
-  }
+}
   
-  .add-item {
+.add-item {
     font-size: 1.1rem;
     text-decoration: none;
     padding: 10px 22px;
@@ -270,15 +267,13 @@ html, body {
     position: absolute;
     bottom: 60px;
     right: 60px;
-    /* flex-direction: column; */
     text-transform: uppercase;
-    /* margin-top: 30px; */
-  }
+}
   
-  .add-item:hover {
+.add-item:hover {
     background-color: #d73e07;
     cursor: pointer;
-  }
+}
 
 
 
