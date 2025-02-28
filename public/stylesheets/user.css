@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Sarina&display=swap');
+
+nav {
+    position: absolute;
+    top: 0;
+    left: 20px;
+    right: 20px;
+    z-index: 100;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav a {
+    color: rgb(242, 241, 245);
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin-right: 20px;
+    transition: color 0.3s ease;
+  }
+  
+  nav a:hover {
+    color: #ff7f50;
+  }
+
+
+  .users-header {
+    font-family: 'Sarina', sans-serif;
+    font-size: 3.5rem;
+    color: #d73e07;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    z-index: 1;
+  }
+
+  .users-container {
+    background-image: url('https://cdn.pixabay.com/photo/2020/09/01/07/58/ocean-5534544_1280.jpg');
+    background-size: cover; 
+    background-position: center;  
+    background-attachment: fixed;
+    height: 100vh; 
+    color: white; 
+    font-family: Arial, sans-serif;
+    padding: 0 20px; 
+    box-sizing: border-box;
+  }
+
+  .users-welcome {
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    font-size: 2rem;
+    color: #d73e07;
+    margin-top: 140px;
+    margin-bottom: 40px;
+  }
+
+
+  .users-list {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px; 
+    max-width: 1000px; 
+    margin: 0 auto;
+  } 
+
+  

@@ -100,9 +100,6 @@ nav {
     font-weight: 700;
     transition: background-color 0.3s ease;
     text-transform: uppercase;
-    /* display: flex;
-    flex-direction: row;
-    align-items: center; */
   }
   
   .show-actions a:hover,
@@ -123,7 +120,6 @@ nav {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* gap: 1px; */
   }
   
   .show-notes h2 {
@@ -134,7 +130,6 @@ nav {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* gap: 1px; */
   }
   
   .show-notes p {
@@ -143,7 +138,6 @@ nav {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* gap: 1px; */
   }
   
   .show-details p {
@@ -151,15 +145,4 @@ nav {
     margin-bottom: 5px;
   }
 
-  /* .wave-info label,
-.wave-info input,
-.wave-info select,
-.wave-info textarea,
-.wave-info button {
-  margin-bottom: 8px;
-  margin: 8px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-} */
+ 

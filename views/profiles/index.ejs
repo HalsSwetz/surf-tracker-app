@@ -4,10 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/stylesheets/profile.css" />
-    <title>My Waves</title>
+    <title>My Profile</title>
   </head>
-  <body>
+  <body class="profile-body">
     <%- include('../partials/_navbar.ejs') %>
+
+    <div class="profile-container">
     <h1 class="profile-header">My Profile</h1>
     <div class="profile-info">
     <h3>Username: <%= profile.username %></h3>
@@ -18,12 +20,14 @@
     </div>
     <p>Your Bio: <%= profile.bio  %></p>
     </div>
+    <p class="your-waves">Your waves:</p>
     <% if (waves.length === 0) { %>
         <p>You have no saved destinations!</p>
     <% } else { %>
        <ul class="wave-list">
             <% waves.forEach(wave => { %>
             <li>
+                
                 <a href="/users/<%= profile._id %>/waves/<%= wave._id %>">
                 <%= wave.name %>
                 </a>
@@ -33,5 +37,7 @@
     <% } %>
     <a class="edit-profile" href="/profiles/<%= profile._id %>/edit">Edit profile</a>
     
+    </div>
+
 </body>
 </html>
