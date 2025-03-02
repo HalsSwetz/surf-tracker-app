@@ -13,7 +13,7 @@
 
 To get started, just navigate to the [*WAVES*](https://surf-waves-app-5c54182282da.herokuapp.com/) page on your browser and either Sign Up, or if you are returning, Sign In!
 
-The navigation of the ***Waves Tracker App*** page is pretty straightforward, and at all times there will be a navigation bar at the top of the page showing you some different options for you to utilize to find more features.  You will be brought to the "*My Waves*" page when you login, with clearly accesible functionality to "*Add a Wave*" to your profile. If you already have waves saved on your profile, you can easily click on the link to display the details of that wave, and once there you can easily utilize the "*Edit Wave*" or "*Delete Wave*" functionalities. At the top of the page the navigation bar links will also allow you to view your own profile, and then you can edit your profile picture or bio while you are there. Also at the top of the page there's an option to "*Explore Profiles*" which will allow you to check out the other users' profiles. 
+The navigation of the ***Waves Tracker App*** page is pretty straightforward, and at all times there will be a navigation bar at the top of the page showing you some different options for you to utilize to find more features.  You will be brought to the "*My Waves*" page when you login, with clearly accessible functionality to "*Add a Wave*" to your profile. If you already have waves saved on your profile, you can easily click on the link to display the details of that wave, and once there you can easily utilize the "*Edit Wave*" or "*Delete Wave*" functionalities. At the top of the page the navigation bar links will also allow you to view your own profile, and then you can edit your profile picture or bio while you are there. Also at the top of the page there's an option to "*Explore Profiles*" which will allow you to check out the other users' profiles. 
 
 ## Features
 - User registration and authentication
@@ -31,7 +31,7 @@ All profile images found on [Imgur](https://imgur.com/).
 All fonts used on the app are from [Google Fonts](https://fonts.google.com/)
 
 ### Technology Used
-- Node.js: backend
+- Node.js: Backend
 - Express: Web application framework
 - MongoDB: Database for storing user and wave data
 - EJS: Templating engine for dynamic rendering
