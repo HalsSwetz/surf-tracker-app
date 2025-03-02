@@ -48,7 +48,7 @@ router.post('/', async (req, res) => {
     }
 }); 
 
-// profiles/profileId/waves/waveId
+
 
 router.get('/:waveId', async (req, res) => {
     try {

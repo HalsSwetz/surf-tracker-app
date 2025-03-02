@@ -49,11 +49,6 @@ app.get('/', (req, res) => {
 });
 
 
-
-
-
-
-
 app.use('/auth', authController);
 app.use(isSignedIn);
 app.use('/users/:userId/waves', wavesController);
