@@ -36,6 +36,8 @@ All fonts used on the app are from [Google Fonts](https://fonts.google.com/)
 - MongoDB: Database for storing user and wave data
 - EJS: Templating engine for dynamic rendering
 - CSS: Styling the frontend
+- Heroku: Deployment
+- Other: JavaScript, GitHub
 
 ### Next Steps for the ***WAVES Tracker App***
 
