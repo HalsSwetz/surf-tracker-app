@@ -32,6 +32,8 @@ body {
     background-image: url('https://cdn.pixabay.com/photo/2017/08/27/15/38/surfing-2686450_1280.jpg');
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
     color: #fff;
     font-family: 'Lato', sans-serif;
     margin: 0;
